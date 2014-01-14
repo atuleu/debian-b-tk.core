@@ -1,0 +1,23 @@
+Source: btk-core
+Priority: extra
+Maintainer: Alexandre Tuleu <alexandre.tuleu.2005@polytechnique.org>
+Build-Depends: debhelper (>= 8.0.0), cmake
+Standards-Version: 3.9.2
+Section: libs
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/btk-core.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/btk-core.git;a=summary
+
+Package: btk-core-dev
+Section: libdevel
+Architecture: any
+Depends: btk-coreBROKEN (= ${binary:Version})
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: btk-coreBROKEN
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

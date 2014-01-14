@@ -1,0 +1,5 @@
+btk-core (0.3.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Alexandre Tuleu <alexandre.tuleu.2005@polytechnique.org>  Tue, 14 Jan 2014 14:19:53 +0000
