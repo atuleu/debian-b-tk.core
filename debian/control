@@ -1,23 +1,50 @@
 Source: btk-core
 Priority: extra
 Maintainer: Alexandre Tuleu <alexandre.tuleu.2005@polytechnique.org>
-Build-Depends: debhelper (>= 8.0.0), cmake
-Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), cmake, git, doxygen
+Standards-Version: 3.9.3
 Section: libs
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/btk-core.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/btk-core.git;a=summary
+Homepage: https://code.google.com/p/b-tk/
+Vcs-Git: https://code.google.com/p/b-tk.core/
+
 
 Package: btk-core-dev
 Section: libdevel
 Architecture: any
-Depends: btk-coreBROKEN (= ${binary:Version})
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: btk-core0.3 (= ${binary:Version})
+Description: Biomechanical ToolKit (BTK) - Development Files
+ BTK is an open-source and cross-platform library for biomechanical
+ analysis. BTK read and write acquisition files and can modify them.
+ .
+ This package contains the necessary files for the C++ API
 
-Package: btk-coreBROKEN
+Package: btk-core0.3
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Biomechanical ToolKit (BTK) - Runtime
+ BTK is an open-source and cross-platform library for biomechanical
+ analysis. BTK read and write acquisition files and can modify them.
+ .
+ This package contains the necessary files for the C++ Runtime
+
+Package: btk-core-doc
+Section: doc
+Architecture: all
+Suggests: btk-core-dev
+Description: Biomechanical ToolKit (BTK) - API Doc
+ BTK is an open-source and cross-platform library for biomechanical
+ analysis. BTK read and write acquisition files and can modify them.
+ .
+ This package contains all the documentation of the C++ API
+
+Package: btk-core0.3-dbg
+Section: debug
+Architecture: any
+Depends: btk-core0.3 (= ${binary:Version}), ${misc:Depends}
+Suggests: btk-core-dev
+Description: Biomechanical ToolKit (BTK) - Debug Symbols
+ BTK is an open-source and cross-platform library for biomechanical
+ analysis. BTK read and write acquisition files and can modify them.
+ .
+ This package contains all the C++ debug symbols

@@ -1,6 +1,15 @@
 btk-core for Debian
 -------------------
 
-<possible notes regarding this package - if none, delete this file>
+BTK is coming with wrappers for various language. However this Debian
+packaging is not shipping (yet) any wrappers. Please not use this
+package and use the binaries found at https://code.google.com/p/b-tk/
+if you need any of the following bindings :
 
- -- Alexandre Tuleu <alexandre.tuleu.2005@polytechnique.org>  Tue, 14 Jan 2014 14:19:53 +0000
+ * Matlab
+ * Octave
+ * Scilab
+ * Python
+
+ -- Alexandre Tuleu <alexandre.tuleu.2005@polytechnique.org>, Tue, 14 Jan 2014 16:26:00 +0000
+
