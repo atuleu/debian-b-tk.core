@@ -1,4 +1,4 @@
 usr/include/*
-usr/lib/btk-*/lib*.so
+usr/lib/lib*.so
 usr/share/btk-*/*.cmake
 

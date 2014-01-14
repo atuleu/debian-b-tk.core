@@ -11,7 +11,7 @@ Vcs-Git: https://code.google.com/p/b-tk.core/
 Package: btk-core-dev
 Section: libdevel
 Architecture: any
-Depends: btk-core0.3 (= ${binary:Version})
+Depends: btk-core0.3 (= ${binary:Version}), ${misc:Depends}
 Description: Biomechanical ToolKit (BTK) - Development Files
  BTK is an open-source and cross-platform library for biomechanical
  analysis. BTK read and write acquisition files and can modify them.
@@ -32,6 +32,7 @@ Package: btk-core-doc
 Section: doc
 Architecture: all
 Suggests: btk-core-dev
+Depends: ${misc:Depends}
 Description: Biomechanical ToolKit (BTK) - API Doc
  BTK is an open-source and cross-platform library for biomechanical
  analysis. BTK read and write acquisition files and can modify them.
