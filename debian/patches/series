@@ -1,1 +1,3 @@
 01_fixes_doc_installation_path
+02_fixes_library_path
+03_remove_rpath
