@@ -9,6 +9,7 @@
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
 
+
 %:
 	dh $@ --parallel --quilt
 
@@ -28,3 +29,8 @@ override_dh_auto_configure:
 .PHONY: override_dh_strip
 override_dh_strip:
 	dh_strip --dbg-package=btk-core0.3-dbg
+
+ifeq ($(DEB_BUILD_ARCH),i386)
+override_dh_auto_test:
+	echo "no unit testing on i386"
+endif
